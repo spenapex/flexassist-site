@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flex Assist Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1b1f; --bg:#ffffff; --muted:#5b5b66; --line:#e2e2e8; --accent:#c8322f; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#ececf1; --bg:#141417; --muted:#a0a0ad; --line:#2c2c33; --accent:#ff6b66; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:2rem; margin:0 0 4px; }
+  h2 { font-size:1.25rem; margin:2rem 0 .4rem; padding-top:1rem; border-top:1px solid var(--line); }
+  p, li { margin:.5rem 0; }
+  .meta { color:var(--muted); margin-bottom:1.5rem; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; margin:.8rem 0; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  .box { border:1px solid var(--line); border-radius:12px; padding:12px 16px; margin:1rem 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Flex Assist Privacy Policy</h1>
+<p class="meta">Effective November 20, 2026 &middot; Developer: Spencer Thom</p>
+
+<div class="box">
+<strong>The short version.</strong> Flex Assist has no accounts, no ads, no tracking and no analytics. Your workouts, measurements and photos stay on your iPhone. The only things that leave your phone are what you give an AI feature (with your permission) and any feedback you choose to send.
+</div>
+
+<h2>1. What stays on your device</h2>
+<p>Flex Assist stores the following only on your iPhone, in the app's own storage:</p>
+<ul>
+  <li>Workouts, exercises, sets, weights, reps and notes</li>
+  <li>Routines, custom exercises and machine brands you add</li>
+  <li>Body measurements and progress photos, if you add them</li>
+  <li>Your profile name and photo, if you add them</li>
+  <li>Settings such as units, theme, rest timer and favorites</li>
+</ul>
+<p>We do not receive, copy or store any of this. If you use iCloud or computer backups, your device may include the app's data in those backups according to your device settings. You can delete everything at any time in <strong>Settings &gt; Delete All My Data</strong>, or by deleting the app.</p>
+
+<h2>2. AI features and what is sent</h2>
+<p>Flex Assist includes optional AI features. Before any of them runs for the first time, the app asks for your permission. You can turn this off at any time in <strong>Settings &gt; AI &amp; Privacy</strong>, and the rest of the app keeps working.</p>
+<table>
+  <tr><th>Feature</th><th>What is sent</th><th>Who processes it</th></tr>
+  <tr><td>Import from a TikTok or Instagram link</td><td>The link you paste, and the public caption text read from that post</td><td>Flex Assist server (Cloudflare); Anthropic (Claude) turns the caption into an exercise</td></tr>
+  <tr><td>Describe an exercise to Claude / Exercise ideas chat</td><td>The messages you type</td><td>Flex Assist server; Anthropic (Claude)</td></tr>
+  <tr><td>Exercise variations</td><td>Exercise name, target muscle, machine brand name and, if you have a focus block, its muscle, strategy and week</td><td>Flex Assist server; Anthropic (Claude)</td></tr>
+  <tr><td>Exercise illustrations</td><td>Exercise name, muscle, equipment and instruction steps</td><td>Flex Assist server; Anthropic (Claude) writes a drawing brief; Google (Gemini) draws the picture and may use a public YouTube search for the exercise name; Cloudflare Workers AI is used as a backup</td></tr>
+</table>
+<p><strong>Never sent to an AI service:</strong> your workout history, sets, weights, body measurements, progress photos, profile, or the photos you add to exercises.</p>
+<p>The Flex Assist server is a small relay that adds the AI providers' access keys and builds the request. It does not have a database and does not keep your prompts or results. Cloudflare may keep standard operational logs (such as request time and error messages) for a limited time. Anthropic and Google handle the requests they receive under their own terms and privacy policies, which may include limited retention for safety and abuse monitoring. See:</p>
+<ul>
+  <li><a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a></li>
+  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a></li>
+</ul>
+<!-- OPTIONAL: add this sentence ONLY after you confirm your Anthropic and Gemini API accounts are on plans whose terms say API inputs are not used to train models:
+<p>Under the API terms we use, these providers do not use the content sent by Flex Assist to train their models.</p>
+-->
+
+<h2>3. TikTok and Instagram links</h2>
+<p>When you paste a link, Flex Assist reads only the <strong>public caption text</strong> of that post so it can build an exercise. It does not download, save, copy or play any video, audio or images from TikTok or Instagram. The link itself is saved on your device next to the exercise so you can open the original post later. To read the caption, your phone or the Flex Assist server contacts TikTok or Instagram, and those services can see that request (including the network address it came from) under their own privacy policies. Flex Assist is not affiliated with or endorsed by TikTok or Instagram.</p>
+
+<h2>4. Exercise photos</h2>
+<p>Photos for the built-in exercise library are loaded from a public exercise dataset hosted on GitHub. When they load, GitHub can see your network address, as with any website. Photos you add yourself stay on your device.</p>
+
+<h2>5. Feedback and bug reports</h2>
+<p>If you send feedback or report a problem from within the app, we receive the message you write. We also receive your email address if you choose to enter one, and basic device information if you leave that switch on (app version, iOS version, device model and the number of exercises loaded). It is delivered to the developer by email through an email service (Resend) and used only to understand and answer your report. Emails are kept as long as needed to respond and fix the problem, and you can ask us to delete them (section 9).</p>
+
+<h2>6. What we do not do</h2>
+<ul>
+  <li>We do not require an account or collect your name, phone number or location.</li>
+  <li>We do not use advertising, analytics or crash-reporting services, and we do not track you across other apps or websites.</li>
+  <li>We do not sell or share your data for advertising.</li>
+  <li>We do not read your Health data or connect to Apple Health.</li>
+</ul>
+
+<h2>7. Permissions</h2>
+<ul>
+  <li><strong>Photos:</strong> only the pictures you pick yourself, through the system photo picker. The app cannot see the rest of your library.</li>
+  <li><strong>Notifications:</strong> optional, used only to tell you when a rest timer ends.</li>
+</ul>
+
+<h2>8. Children</h2>
+<p>Flex Assist is not directed to children under 13, and we do not knowingly collect personal information from them.</p>
+
+<h2>9. Your choices and rights</h2>
+<p>You can use the app without AI features, delete all on-device data in Settings, or export your workouts as a CSV file. Because we do not hold your workout data or an account for you, there is nothing else to retrieve or erase on our side except any feedback email you sent. To ask us to delete a feedback email, or if you have questions about your rights under laws such as the GDPR or CCPA, contact us at the address below and we will respond.</p>
+
+<h2>10. Health notice</h2>
+<p>Flex Assist is a training log and planning tool. Recovery estimates, progress suggestions and AI-generated exercises are general information, not medical advice. Talk to a qualified professional before starting a new exercise program, and stop if something hurts.</p>
+
+<h2>11. Changes</h2>
+<p>If this policy changes, we will update the date at the top and, for changes that affect what is sent from your device, ask for your permission again in the app.</p>
+
+<h2>12. Contact</h2>
+<p>Spencer Thom &middot; <a href="mailto:flexassist.support@gmail.com">flexassist.support@gmail.com</a></p>
+</main>
+</body>
+</html>
